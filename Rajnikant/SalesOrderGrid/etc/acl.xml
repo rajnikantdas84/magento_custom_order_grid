@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author   Rajnikant Das
+ * @license  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <!-- Menu -->
+                <resource id="Rajnikant_SalesOrderGrid::core" title="Rajnikant" sortOrder="55">
+                    <resource id="Rajnikant_SalesOrderGrid::menu_section" title="Custom Order Grid Section" sortOrder="20">
+                        <resource id="Rajnikant_SalesOrderGrid::menu_config" title="Manage Settings" sortOrder="20" />
+                    </resource>
+                </resource>
+                <!-- Settings -->
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Rajnikant_SalesOrderGrid::config" title="Custom Order Grid Section" sortOrder="50" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

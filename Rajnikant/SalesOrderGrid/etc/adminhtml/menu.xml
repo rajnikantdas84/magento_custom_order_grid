@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author   Rajnikant Das
+ * @license  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rajnikant_SalesOrderGrid::menu_section" title="Custom Order Grid" module="Rajnikant_SalesOrderGrid" sortOrder="20" parent="Magento_Sales::sales" resource="Rajnikant_SalesOrderGrid::menu_section"/>
+        <add id="Rajnikant_SalesOrderGrid::menu_config" title="Manage Settings" module="Rajnikant_SalesOrderGrid" sortOrder="20" parent="Rajnikant_SalesOrderGrid::menu_section" action="adminhtml/system_config/edit/section/rajnikant_salesordergrid" resource="Rajnikant_SalesOrderGrid::menu_config" />
+    </menu>
+</config>
